@@ -1,152 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Siya Sharma | Portfolio</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f2f2f2;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 40px auto;
-  background: linear-gradient(135deg, #2e1f3d, #5b3c66);
-  border-radius: 30px;
-  overflow: hidden;
-  color: white;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-.hero {
-  padding: 80px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero-text h1 {
-  font-size: 40px;
-  margin: 0;
-}
-
-.hero-text p {
-  opacity: 0.8;
-}
-
-.hero img {
-  width: 150px;
-  border-radius: 20px;
-}
-
-.section {
-  padding: 60px 40px;
-  background: rgba(0,0,0,0.2);
-}
-
-.section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 15px;
-  width: 250px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  background: rgba(255,255,255,0.2);
-}
-
-.skills span {
-  background: rgba(255,255,255,0.2);
-  padding: 8px 12px;
-  margin: 5px;
-  border-radius: 20px;
-  display: inline-block;
-}
-
-.footer {
-  padding: 30px;
-  text-align: center;
-  background: rgba(0,0,0,0.3);
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Siya Sharma | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 
-<div class="container">
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Siya.</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <div class="hero">
+  <!-- HERO SECTION -->
+  <section class="hero">
     <div class="hero-text">
-      <h1>Hi there, I'm Siya 👋</h1>
-      <p>Java & Backend Developer</p>
-    </div>
-    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-  </div>
+      <h1>Hi, I'm Siya Sharma 👋</h1>
+      <p>🔹 Aspiring Backend Developer.</p>
+      <p>🚀 Passionate about DSA & Competitive Programming</p>
+      <p>🗣️ Public speaker & community enthusiast.</p>
+      <p>🎨 Skilled in UI/UX design.</p>
+      <p>🤝 Open to collaboration & networking</p>
 
-  <div class="section">
+      <div class="buttons">
+        <a href="https://www.linkedin.com/in/siya-sharma-194953235/" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/siyasharma645" target="_blank" class="btn outline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="card-section">
     <h2>About Me</h2>
-    <div class="cards">
-      <div class="card">
-        Passionate about Java & Spring Boot.
-      </div>
-      <div class="card">
-        Love building scalable backend systems.
-      </div>
-      <div class="card">
-        Always learning & improving.
-      </div>
-    </div>
-  </div>
+    <p>
+      I'm a 3rd-year B.Tech CSE (Data Science) student at AKGEC.
+      I love building backend systems, solving DSA problems,
+      and actively contributing to tech communities like GDG.
+    </p>
+  </section>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <div class="skills" style="text-align:center;">
-      <span>Java</span>
-      <span>Spring Boot</span>
-      <span>SQL</span>
-      <span>Git</span>
-      <span>HTML</span>
-      <span>CSS</span>
+  <!-- SKILLS -->
+  <section id="skills" class="card-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="card">Java</div>
+      <div class="card">Data Structures</div>
+      <div class="card">Problem Solving</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">UI/UX Design</div>
+      <div class="card">Public Speaking</div>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <!-- PROJECTS -->
+  <section id="projects" class="card-section">
     <h2>Projects</h2>
-    <div class="cards">
+    <div class="projects-grid">
       <div class="card">
-        Project 1<br><br>
-        Coming Soon 🚀
+        <h3>Portfolio Website</h3>
+        <p>Personal responsive portfolio hosted on GitHub Pages.</p>
       </div>
       <div class="card">
-        Project 2<br><br>
-        Coming Soon 🚀
+        <h3>DSA Practice</h3>
+        <p>Competitive programming solutions on CodeChef & LeetCode.</p>
+      </div>
+      <div class="card">
+        <h3>Java Projects</h3>
+        <p>Core Java and OOP-based mini backend applications.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="footer">
-    © 2026 Siya Sharma
-  </div>
+  <!-- CONTACT -->
+  <section id="contact" class="card-section">
+    <h2>Contact</h2>
+    <p>Email: your-email@gmail.com</p>
+    <p>
+      <a href="https://www.linkedin.com/in/siya-sharma-194953235/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/siyasharma645" target="_blank">GitHub</a>
+    </p>
+  </section>
 
-</div>
+  <footer>
+    <p>© 2026 Siya Sharma | Built with ❤️</p>
+  </footer>
 
 </body>
 </html>
