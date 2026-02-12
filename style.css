@@ -1,44 +1,99 @@
-body {
+/* =========================
+   GOOGLE FONT IMPORT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
   background-color: #F5EFE6;
   color: #2E2E2E;
+  line-height: 1.6;
 }
 
-/* HERO */
+section {
+  padding: 80px 10%;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hello-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .hello-text {
   font-size: 90px;
   font-weight: 800;
+  letter-spacing: 5px;
   color: #C8B6FF;
-  margin-bottom: 10px;
+}
+
+/* Stars */
+.star {
+  position: absolute;
+  font-size: 28px;
+  color: #B8A4F4;
+}
+
+.star-left {
+  left: -40px;
+  top: 10px;
+}
+
+.star-right {
+  right: -40px;
+  bottom: 10px;
 }
 
 .hero h2 {
   font-size: 28px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 16px;
-  max-width: 600px;
-  margin: 0 auto 30px auto;
   color: #555;
+  margin-bottom: 30px;
 }
 
-/* BUTTONS */
+
+/* =========================
+   BUTTONS
+========================= */
 .hero-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -47,6 +102,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s ease;
+  display: inline-block;
 }
 
 .primary-btn {
@@ -69,4 +125,99 @@ body {
   background-color: #C8B6FF;
   color: white;
   transform: translateY(-3px);
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about {
+  text-align: center;
+  background-color: #FBF7F0;
+  border-radius: 20px;
+  padding: 60px;
+  margin: 60px 0;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #9F8AE0;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+  color: #555;
+}
+
+
+/* =========================
+   SKILLS SECTION
+========================= */
+.skills {
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #9F8AE0;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: #FBF7F0;
+  padding: 20px 30px;
+  border-radius: 20px;
+  min-width: 140px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #C8B6FF;
+  color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  color: #777;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+
+  .hello-text {
+    font-size: 60px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
 }
