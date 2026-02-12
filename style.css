@@ -134,11 +134,15 @@ h2 {
   text-align: center;
   border-radius: 15px;
   font-weight: 500;
-  transition: 0.3s;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
+  background: #7b5ea7;
+  color: white;
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(123, 94, 167, 0.4);
 }
 
 /* PROFILES */
@@ -160,7 +164,82 @@ h2 {
 .profile-buttons a:hover {
   background: #5e4787;
 }
+/* FLASHCARD CONTAINER */
+.flashcard-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 
+/* FLASHCARD */
+.flashcard {
+  width: 250px;
+  height: 180px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flashcard:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* FRONT */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+/* FRONT STYLE */
+.card-front {
+  background: #e6d9f5;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4b3f72;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* BACK STYLE */
+.card-back {
+  background: #7b5ea7;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card-back p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-back a {
+  text-decoration: none;
+  background: white;
+  color: #7b5ea7;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.card-back a:hover {
+  background: #f3ede4;
+}
 /* CONTACT */
 #contact p {
   font-size: 18px;
